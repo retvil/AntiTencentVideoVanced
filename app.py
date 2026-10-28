@@ -24,7 +24,7 @@ import profiles
 import translations
 import tencent_detect
 
-FLAG_LINE = "🇬🇧 English | 🇷🇺 Русский | 🇺🇦 Українська | 🇰🇿 Қазақша | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇵🇱 Polski | 🇹🇷 Türkçe | 🇨🇳 中文"
+FLAG_LINE = ("🇬🇧 English | [🇷🇺 Русский](README.ru.md) | [🇺🇦 Українська](README.uk.md) | [🇰🇿 Қазақша](README.kk.md) | [🇩🇪 Deutsch](README.de.md) | [🇫🇷 Français](README.fr.md) | [🇪🇸 Español](README.es.md) | [🇵🇱 Polski](README.pl.md) | [🇹🇷 Türkçe](README.tr.md) | [🇨🇳 中文](README.zh.md)")
 APP_VERSION = "1.1.0"
 APP_AUTHOR = "Nod33Eset"
 GITHUB_URL = "https://github.com/retvil/AntiTencentVanced"
@@ -531,5 +531,6 @@ def run(profile_name: str) -> None:
         update_status(t("warn_no_admin"), STATUS_COLORS["warn"])
 
     root.mainloop()
+
 
 
