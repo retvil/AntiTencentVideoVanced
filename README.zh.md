@@ -14,7 +14,7 @@ Tencent 安装的不只是一个浏览器 — 它通过四十种不同的系统�
 
 ## 功能
 
-- **劫持扫描器** — 检测 40 个向量：安装路径、注册表 Uninstall 项、`UserChoice` 关联、`StartMenuInternet` 注册、`Software\Tencent` 键树、通过 `DefaultSearchProvider*` 策略的劫持、Chromium 配置文件的 `Preferences`、`Web Data`（SQLite）关键词、Firefox `search.json.mozlz4`、旧版 `SearchScopes`、自启动项、计划任务、Windows 服务、Punto Switcher、文件关联、Tencent Disk 外壳集成、禁用的自启动、App Paths、快捷方式、ProgramData/Roaming 残留、hosts 条目、防火墙规则、URI 协议、浏览器扩展、tencent.ru cookies、“打开方式”关联、Prefetch/WER 痕迹、Defender 排除项、键盘布局、IE 起始页劫持、启动 URL 策略（`RestoreOnStartupURLs`）、Firefox 主页、IE 区域映射、RegisteredApplications 项、MUICache 痕迹、%TEMP% 安装程序、Store 应用（Tencent Music、Alice）、产品目录、本地数据目录、Tencent.DNS
+- **劫持扫描器** — 检测 40 个向量：安装路径、注册表 Uninstall 项、`UserChoice` 关联、`StartMenuInternet` 注册、`Software\Tencent` 键树、通过 `DefaultSearchProvider*` 策略的劫持、Chromium 配置文件的 `Preferences`、`Web Data`（SQLite）关键词、Firefox `search.json.mozlz4`、旧版 `SearchScopes`、自启动项、计划任务、Windows 服务、IME Switcher、文件关联、Tencent Disk 外壳集成、禁用的自启动、App Paths、快捷方式、ProgramData/Roaming 残留、hosts 条目、防火墙规则、URI 协议、浏览器扩展、tencent.ru cookies、“打开方式”关联、Prefetch/WER 痕迹、Defender 排除项、键盘布局、IE 起始页劫持、启动 URL 策略（`RestoreOnStartupURLs`）、Firefox 主页、IE 区域映射、RegisteredApplications 项、MUICache 痕迹、%TEMP% 安装程序、Store 应用（Tencent Music、Alice）、产品目录、本地数据目录、Tencent.DNS
 - **一键清除** — 每个向量都有专属 remover；被锁定的数据库会如实报告，不会崩溃
 - **硬性搜索策略** — 通过 HKLM 策略（Chrome、Edge、Brave、Vivaldi、Opera 和 Tencent 浏览器）以及 Firefox/Waterfox 的 `policies.json`，将默认搜索锁定为 10 个搜索引擎之一（Google、Bing、DuckDuckGo、Brave Search、Startpage、Mojeek、Qwant、Ecosia、Yahoo、SearXNG）
 - **策略清理** — 从注册表中清除 Tencent 的 `DefaultSearchProvider*` 值
@@ -35,7 +35,7 @@ Tencent 安装的不只是一个浏览器 — 它通过四十种不同的系统�
 从 [Releases](https://github.com/retvil/AntiTencentVanced/releases) 下载：
 
 - **Windows** — `AntiTencentVanced.exe`（便携版，单文件，约 35 MB） — 移除 Tencent 浏览器和 Tencent 搜索
-- **Windows** — `AntiTencentExtended.exe`（便携版，单文件，约 35 MB）— 移除所有 Tencent 产品（Tencent Disk、Punto Switcher 历史、全系统痕迹、Store 应用、Tencent.DNS）
+- **Windows** — `AntiTencentExtended.exe`（便携版，单文件，约 35 MB）— 移除所有 Tencent 产品（Tencent Disk、IME Switcher 历史、全系统痕迹、Store 应用、Tencent.DNS）
 
 请**以管理员身份**运行 — HKLM 策略和注册表清理需要提升的权限。
 

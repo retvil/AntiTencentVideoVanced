@@ -14,7 +14,7 @@ Tencent installiert nicht nur einen Browser — es trägt sich still über vierz
 
 ## Funktionen
 
-- **Hijack-Scanner** — erkennt 40 Vektoren: Installationspfade, Uninstall-Registry-Einträge, `UserChoice`-Assoziation, `StartMenuInternet`-Registrierungen, `Software\Tencent`-Schlüsselbäume, Hijack über `DefaultSearchProvider*`-Richtlinien, Chromium-Profil-`Preferences`, Schlüsselwörter in `Web Data` (SQLite), Firefox `search.json.mozlz4`, Legacy-`SearchScopes`, Autostart-Einträge, geplante Aufgaben, Windows-Dienste, Punto Switcher, Dateizuordnungen, Tencent-Disk-Shell-Integration, deaktivierter Autostart, App Paths, Verknüpfungen, ProgramData/Roaming-Reste, hosts-Einträge, Firewall-Regeln, URI-Protokolle, Browser-Erweiterungen, tencent.ru-Cookies, „Öffnen mit“-Zuordnungen, Prefetch/WER-Spuren, Defender-Ausschlüsse, Tastaturlayouts, IE-Startseiten-Hijack, Richtlinien für Start-URLs (`RestoreOnStartupURLs`), Firefox-Startseite, IE-Zonemap, RegisteredApplications-Einträge, MUICache-Spuren, %TEMP%-Installer, Store-Apps (Tencent Music, Alice), Produktverzeichnisse, lokale Datenverzeichnisse, Tencent.DNS
+- **Hijack-Scanner** — erkennt 40 Vektoren: Installationspfade, Uninstall-Registry-Einträge, `UserChoice`-Assoziation, `StartMenuInternet`-Registrierungen, `Software\Tencent`-Schlüsselbäume, Hijack über `DefaultSearchProvider*`-Richtlinien, Chromium-Profil-`Preferences`, Schlüsselwörter in `Web Data` (SQLite), Firefox `search.json.mozlz4`, Legacy-`SearchScopes`, Autostart-Einträge, geplante Aufgaben, Windows-Dienste, IME Switcher, Dateizuordnungen, Tencent-Disk-Shell-Integration, deaktivierter Autostart, App Paths, Verknüpfungen, ProgramData/Roaming-Reste, hosts-Einträge, Firewall-Regeln, URI-Protokolle, Browser-Erweiterungen, tencent.ru-Cookies, „Öffnen mit“-Zuordnungen, Prefetch/WER-Spuren, Defender-Ausschlüsse, Tastaturlayouts, IE-Startseiten-Hijack, Richtlinien für Start-URLs (`RestoreOnStartupURLs`), Firefox-Startseite, IE-Zonemap, RegisteredApplications-Einträge, MUICache-Spuren, %TEMP%-Installer, Store-Apps (Tencent Music, Alice), Produktverzeichnisse, lokale Datenverzeichnisse, Tencent.DNS
 - **Entfernung mit einem Klick** — jeder Vektor hat seinen eigenen Remover; gesperrte Datenbanken werden ehrlich gemeldet, ohne Abstürze
 - **Harte Suchrichtlinie** — verriegelt die Standardsuche auf eine von 10 Suchmaschinen (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) über HKLM-Richtlinien für Chrome, Edge, Brave, Vivaldi, Opera und Tencent Browser + `policies.json` für Firefox/Waterfox
 - **Richtlinien-Bereinigung** — entfernt Tencent-`DefaultSearchProvider*`-Werte aus der Registry
@@ -35,7 +35,7 @@ Tencent installiert nicht nur einen Browser — es trägt sich still über vierz
 Download von [Releases](https://github.com/retvil/AntiTencentVanced/releases):
 
 - **Windows** — `AntiTencentVanced.exe` (portabel, eine Datei, ~35 MB) — entfernt Tencent Browser und die Tencent-Suche
-- **Windows** — `AntiTencentExtended.exe` (portabel, eine Datei, ~35 MB) — Entfernung aller Tencent-Produkte (Tencent Disk, Punto-Switcher-Verlauf, systemweite Spuren, Store-Apps, Tencent.DNS)
+- **Windows** — `AntiTencentExtended.exe` (portabel, eine Datei, ~35 MB) — Entfernung aller Tencent-Produkte (Tencent Disk, ime-Switcher-Verlauf, systemweite Spuren, Store-Apps, Tencent.DNS)
 
 Als **Administrator ausführen** — HKLM-Richtlinien und Registry-Bereinigung erfordern erhöhte Rechte.
 

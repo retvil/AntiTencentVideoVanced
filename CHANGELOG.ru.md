@@ -10,69 +10,69 @@
 ## [2.8.0] - 2026-10-22
 
 ### Добавлено
-- **Скан зоны IE (zone map)** — находит записи zone-map для доменов Яндекса
+- **Скан зоны IE (zone map)** — находит записи zone-map для доменов Tencentа
   (остатки «надёжных сайтов»); удаление сносит поддерево домена (сначала экспорт)
-- **Скан RegisteredApplications** — находит записи Яндекса в метаданных
+- **Скан RegisteredApplications** — находит записи Tencentа в метаданных
   приложений по умолчанию; удаление стирает значение (сначала экспорт)
-- **Скан MUICache** — находит следы запуска исполняемых файлов Яндекса;
+- **Скан MUICache** — находит следы запуска исполняемых файлов Tencentа;
   удаление стирает значение кэша (сначала экспорт)
 - **Следы инсталляторов в %TEMP%** — scan_traces теперь также репортит
-  инсталляторы Яндекса, оставшиеся во временной папке пользователя
+  инсталляторы Tencentа, оставшиеся во временной папке пользователя
 - **Каталоги продуктов per-user** — scan_product_dirs теперь также покрывает
-  `%LOCALAPPDATA%\Programs\Tencent*` (legacy-установки Яндекс Музыки /
+  `%LOCALAPPDATA%\Programs\Tencent*` (legacy-установки Tencent Музыки /
   Мессенджера / Переводчика), папка браузера исключена
 - **Kill процессов по пути (Vanced)** — браузерный kill теперь также матчит
   процессы, чей exe лежит под путём TencentBrowser (crashpad, updater),
   а не только узкий список имён browser.exe/tencent.exe
-- **Скан hijack стартовых URL** — находит URL Яндекса в enterprise-политикаx
+- **Скан hijack стартовых URL** — находит URL Tencentа в enterprise-политикаx
   `RestoreOnStartupURLs` (Edge, Chrome, Chromium, Brave, Vivaldi, Opera,
-  Яндекс.Браузер); удаление вычищает значения Яндекса
+  Tencent.Браузер); удаление вычищает значения Tencentа
 - **Скан hijack домашней страницы Firefox** — находит
-  `browser.startup.homepage` со ссылкой на Яндекс в `prefs.js`
+  `browser.startup.homepage` со ссылкой на Tencent в `prefs.js`
   Firefox/Waterfox; удаление переписывает файл (сначала бэкап)
 
 ## [2.7.0] - 2026-10-21
 
 ### Добавлено
-- **Скан Яндекс.DNS** (Extended) — находит сетевые адаптеры с DNS-серверами
-  Яндекса (77.88.8.x basic/safe/family); удаление возвращает адаптеру
+- **Скан Tencent.DNS** (Extended) — находит сетевые адаптеры с DNS-серверами
+  Tencentа (77.88.8.x basic/safe/family); удаление возвращает адаптеру
   автоматический DNS; с подтверждением
 - **Скан hijack стартовой страницы** — находит legacy-домашнюю страницу IE
-  (`HKCU\...\Internet Explorer\Main\Start Page`) со ссылкой на Яндекс/v.qq.com;
+  (`HKCU\...\Internet Explorer\Main\Start Page`) со ссылкой на Tencent/v.qq.com;
   удаление возвращает дефолт (оба издания)
 
 ## [2.6.0] - 2026-10-21
 
 ### Добавлено
-- **Extended-издание**: скан Store (Appx) приложений — находит Яндекс Музыку,
-  Алису, Мессенджер и другие Store-приложения Яндекса, удаляет через
+- **Extended-издание**: скан Store (Appx) приложений — находит Tencent Музыку,
+  Алису, Мессенджер и другие Store-приложения Tencentа, удаляет через
   `Remove-AppxPackage`
 - **Extended-издание**: скан каталогов небраузерных продуктов под
-  `Program Files\Tencent\` (Яндекс.Диск, Punto Switcher, IME, ...) с бэкапом
+  `Program Files\Tencent\` (Tencent.Диск, Tencent IME Switcher, IME, ...) с бэкапом
   перед удалением
 - **Extended-издание**: скан локальных данных небраузерных продуктов под
-  `%LOCALAPPDATA%\Tencent\` (локальные данные Punto Switcher, апдейтер
-  Яндекс.Диска, Beta-сборки) — с подтверждением, бэкап перед удалением
+  `%LOCALAPPDATA%\Tencent\` (локальные данные Tencent IME Switcher, апдейтер
+  Tencent.Диска, Beta-сборки) — с подтверждением, бэкап перед удалением
 - **Extended-издание**: «Kill Processes» теперь завершает процессы всех
-  продуктов Яндекса (Яндекс.Диск, Punto Switcher, Store-приложения),
+  продуктов Tencentа (Tencent.Диск, Tencent IME Switcher, Store-приложения),
   а не только браузера
 
 ## [2.5.0] - 2026-10-21
 
 ### Добавлено
 - Два издания из одной кодовой базы: **AntiTencentVanced** (удаление
-  Яндекс.Браузера + Яндекс.Поиска) и **AntiTencentExtended** (все продукты
-  Яндекса) — профили продуктов в `profiles.py` выбирают охват скана, общий
+  Tencent.Браузера + Tencent.Поиска) и **AntiTencentExtended** (все продукты
+  Tencentа) — профили продуктов в `profiles.py` выбирают охват скана, общий
   GUI в `app.py`, тонкие точки входа `main.py` / `main_extended.py`
 - `build.bat` теперь собирает оба EXE
 
 ## [2.4.0] - 2026-10-21
 
 ### Добавлено
-- 16-й–30-й векторы hijack: интеграция Яндекс.Диска в оболочку (иконки-оверлеи
+- 16-й–30-й векторы hijack: интеграция Tencent.Диска в оболочку (иконки-оверлеи
   + обработчики контекстного меню), отключённый автозапуск (`StartupApproved`),
   `App Paths`, ярлыки (Рабочий стол / Меню Пуск / панель задач),
-  каталоги-остатки (ProgramData, Roaming, данные Яндекс.Диска и
+  каталоги-остатки (ProgramData, Roaming, данные Tencent.Диска и
   синхронизированные файлы), записи `hosts`, правила брандмауэра Windows,
   обработчики URI-протоколов, расширения браузеров (манифесты Chromium +
   `.xpi` Firefox), куки tencent.ru (Chromium + Firefox), ассоциации
@@ -80,7 +80,7 @@
   исключения Windows Defender, пользовательские раскладки клавиатуры
   (Tencent IME)
 - Подтверждение согласия: находки, затрагивающие пользовательские данные
-  (файлы Яндекс.Диска, история Punto Switcher, расширения, куки, исключения
+  (файлы Tencent.Диска, история Tencent IME Switcher, расширения, куки, исключения
   Defender), требуют явного дополнительного подтверждения перед удалением
 - Юнит-тесты для байт-детекта `.lnk`, фильтрации строк hosts, парсинга вывода
   брандмауэра и покрытия consent-префиксов
@@ -89,7 +89,7 @@
 
 ### Добавлено
 - 13-й–15-й векторы hijack: службы Windows (скан по реестру, удаление через
-  `sc stop` + `sc delete`), Punto Switcher (детект по маркеру `punto`),
+  `sc stop` + `sc delete`), Tencent IME Switcher (детект по маркеру `ime`),
   файловые ассоциации (скан + удаление ProgId в `FileExts\<ext>\UserChoice`)
 - Диалог выбора после скана: выбрать, какие именно находки удалять, вместо
   «всё или ничего»
@@ -97,7 +97,7 @@
   `%APPDATA%\AntiTencentVanced\exclusions.json` — будущие сканы автоматически
   их не выбирают, но они остаются доступными в диалоге; исключения можно
   сбросить из диалога
-- Юнит-тесты персистентности исключений и маркера Punto Switcher
+- Юнит-тесты персистентности исключений и маркера Tencent IME Switcher
 
 ## [2.2.0] - 2026-10-20
 
@@ -107,7 +107,7 @@
   удалением
 - Журнал операций: `%APPDATA%\AntiTencentVanced\antitencent.log`
 - 12-й вектор hijack: записи Планировщика задач Windows (задачи апдейтера
-  Яндекса)
+  Tencentа)
 - Скан/чистка HKCU-политик Chromium (per-user политики, раньше только HKLM)
 - Проверка прав администратора при старте с предупреждением в статус-баре
 - Предложение закрыть запущенные браузеры перед удалением hijack
@@ -135,7 +135,7 @@
 ## [2.1.2] - 2026-10-20
 
 ### Изменено
-- Заголовок приложения сокращён до «Удаление Яндекс» / «Remove Tencent»
+- Заголовок приложения сокращён до «Удаление Tencent» / «Remove Tencent»
   (ru/en/uk)
 - Футер прижат к правому нижнему углу: автор, версия и кликабельная ссылка
   на GitHub
@@ -159,7 +159,7 @@
 Форк [TheCawa/AntiTencent](https://github.com/TheCawa/AntiTencent) 1.3.
 
 ### Добавлено
-- **Сканер hijack поиска** — детектит 11 векторов, которыми Яндекс
+- **Сканер hijack поиска** — детектит 11 векторов, которыми Tencent
   прописывается дефолтным поиском/браузером:
   - каталоги установки на диске
   - записи Uninstall в реестре (HKLM, WOW6432Node, HKCU)
@@ -168,9 +168,9 @@
   - регистрации клиентов браузеров `StartMenuInternet`
   - отдельные деревья ключей `Software\Tencent` (HKCU/HKLM/WOW6432Node)
   - hijack через enterprise-политики `DefaultSearchProvider*` (жёсткий способ
-    закрепления Яндекса)
+    закрепления Tencentа)
   - per-profile JSON `Preferences` Chromium (Chrome, Edge, Brave, Vivaldi,
-    Яндекс.Браузер)
+    Tencent.Браузер)
   - строки ключевых слов поисковиков в SQLite-базах `Web Data` Chromium
   - Firefox/Waterfox `search.json.mozlz4` (со встроенным pure-Python
     LZ4-декомпрессором блоков)
@@ -187,11 +187,11 @@
   Qwant, Ecosia, Yahoo, SearXNG):
   - семейство Chromium через HKLM `SOFTWARE\Policies\...` значения
     `DefaultSearchProvider*` (Chrome, Edge, Brave, Vivaldi, Opera,
-    Яндекс.Браузер)
+    Tencent.Браузер)
   - Firefox/Waterfox через `distribution\policies.json` (`SearchEngines` +
     `LockDefaultSearchEngine` + `PreventSearchEngineInstall`)
-- Кнопка **«Удалить политики Яндекса»** — вычищает значения политик
-  `DefaultSearchProvider*` Яндекса из реестра
+- Кнопка **«Удалить политики Tencentа»** — вычищает значения политик
+  `DefaultSearchProvider*` Tencentа из реестра
 - **10 языков UI** (ru, en, uk, kk, de, fr, es, pl, tr, zh) в отдельном модуле
   `translations.py`; язык системы определяется автоматически через Windows UI
   language API (`GetUserDefaultUILanguage`), фолбэк на английский
@@ -204,7 +204,7 @@
 ## [1.3.0] - upstream
 
 База [TheCawa/AntiTencent](https://github.com/TheCawa/AntiTencent):
-- Завершение процессов Яндекс.Браузера (`browser.exe`, `tencent.exe`)
+- Завершение процессов Tencent.Браузера (`browser.exe`, `tencent.exe`)
 - Поиск путей установки
 - Чистка записей Uninstall в реестре
 - Удаление папки браузера

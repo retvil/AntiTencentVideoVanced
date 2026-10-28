@@ -2,22 +2,22 @@
 
 [![Release](https://img.shields.io/github/v/release/retvil/AntiTencentVanced?sort=date)](https://github.com/retvil/AntiTencentVanced/releases) [![Platform Windows](https://img.shields.io/badge/platform-Windows-blue)](https://github.com/retvil/AntiTencentVanced/releases) [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 
-**Tencent Browser-ді толық жою және әдепкі іздеуді ұрлаудан қатаң қорғау — 40 детект векторы, 10 іздеу жүйесі, 10 интерфейс тілі.**
+**Tencent Browser-ді толық жою және әдепкі іздеуді ұрлаудан қатаң қорғау — 28 детект векторы (VANCED) / 39 детект векторы (EXTENDED), 10 іздеу жүйесі, 10 интерфейс тілі.**
 
 [🇬🇧 English](README.md) | [🇷🇺 Русский](README.ru.md) | [🇺🇦 Українська](README.uk.md) | **🇰🇿 Қазақша** | [🇩🇪 Deutsch](README.de.md) | [🇫🇷 Français](README.fr.md) | [🇪🇸 Español](README.es.md) | [🇵🇱 Polski](README.pl.md) | [🇹🇷 Türkçe](README.tr.md) | [🇨🇳 中文](README.zh.md)
 
 ## Бұл не?
 
-Tencent жай ғана браузер орнатпайды — ол жүйенің қырық әртүрлі механизмі арқылы әдепкі іздеу/браузер болып үнсіз тіркеледі: реестр ассоциациялары, enterprise-саясаттар, браузер профильдерінің параметрлері, тіпті Chromium профильдеріндегі іздеу жүйелерінің базалары. Бір браузерді жою мұның бәрін жоймайды.
+Tencent жай ғана браузер орнатпайды — ол жүйенің көптеген механизмі арқылы әдепкі іздеу/браузер болып үнсіз тіркеледі: реестр ассоциациялары, enterprise-саясаттар, браузер профильдерінің параметрлері, тіпті Chromium профильдеріндегі іздеу жүйелерінің базалары. Бір браузерді жою мұның бәрін жоймайды.
 
-**AntiTencent Vanced** ([TheCawa/AntiTencent](https://github.com/TheCawa/AntiTencent) форкі) **барлық 40 ұрлау векторын** табады, бір батырмамен алып тастайды, содан кейін әдепкі іздеуді таңдаған іздеу жүйеңізге Windows enterprise-саясаттары арқылы **қатайтып бекітеді** — ештеңе үнсіз қайтарып алмас үшін.
+**AntiTencent Vanced** ([TheCawa/AntiTencent](https://github.com/TheCawa/AntiTencent) форкі) **барлық ұрлау векторын** (VANCED-да 28, EXTENDED-да 39) табады, бір батырмамен алып тастайды, содан кейін әдепкі іздеуді таңдаған іздеу жүйеңізге Windows enterprise-саясаттары арқылы **қатайтып бекітеді** — ештеңе үнсіз қайтарып алмас үшін.
 
 ## Мүмкіндіктер
 
-- **Ұрлау сканері** — 40 векторды анықтау: орнату жолдары, реестрдегі Uninstall жазбалары, `UserChoice` ассоциациясы, `StartMenuInternet` тіркелулері, `Software\Tencent` кілттер ағаштары, `DefaultSearchProvider*` саясаттары арқылы ұрлау, Chromium профильдерінің `Preferences` параметрлері, `Web Data` (SQLite) кілт сөздері, Firefox `search.json.mozlz4`, legacy `SearchScopes`, автозапуск, тапсырмалар жоспарлаушы, Windows қызметтері, Punto Switcher, файлдық байланыстырулар, Tencent Disk интеграциясы, өшірілген автозапуск, App Paths, жарлықтар, ProgramData/Roaming қалдықтары, hosts жазбалары, брандмауэр ережелері, URI-протоколдар, браузер кеңейтулері, tencent.ru cookie файлдары, «көмегімен ашу» ассоциациялары, Prefetch/WER іздері, Defender ерекшеліктері, пернетақта орналасулары, IE бастапқы бетін ұрлау, бастапқы URL саясаттары (`RestoreOnStartupURLs`), Firefox басты беті, IE аймақ картасы, RegisteredApplications жазбалары, MUICache іздері, %TEMP% орнатқыштары, Store қосымшалары (Tencent Music, Alice), өнім каталогтары, жергілікті деректер каталогтары, Tencent.DNS
+- **Ұрлау сканері** — 28 вектор (VANCED) / 39 вектор (EXTENDED) анықтау: орнату жолдары, реестрдегі Uninstall жазбалары, `UserChoice` ассоциациясы, `StartMenuInternet` тіркелулері, `Software\Tencent` кілттер ағаштары, `DefaultSearchProvider*` саясаттары арқылы ұрлау, Chromium профильдерінің `Preferences` параметрлері, `Web Data` (SQLite) кілт сөздері, Firefox `search.json.mozlz4`, legacy `SearchScopes`, автозапуск, тапсырмалар жоспарлаушы, Windows қызметтері, IME Switcher, файлдық байланыстырулар, Tencent Disk интеграциясы, өшірілген автозапуск, App Paths, жарлықтар, ProgramData/Roaming қалдықтары, hosts жазбалары, брандмауэр ережелері, URI-протоколдар, браузер кеңейтулері, tencent.ru cookie файлдары, «көмегімен ашу» ассоциациялары, Prefetch/WER іздері, Defender ерекшеліктері, пернетақта орналасулары, IE бастапқы бетін ұрлау, бастапқы URL саясаттары (`RestoreOnStartupURLs`), Firefox басты беті, IE аймақ картасы, RegisteredApplications жазбалары, MUICache іздері, %TEMP% орнатқыштары, Store қосымшалары (Tencent Music, Alice), өнім каталогтары, жергілікті деректер каталогтары, Tencent.DNS
 - **Бір батырмамен жою** — әр вектордың өз remover-ы бар; бұғатталған базалар шынайы репортталады, крашсыз
-- **Қатаң іздеу саясаты** — іздеуді 10 іздеу жүйесінің біреуіне (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) бекітеді: Chrome, Edge, Brave, Vivaldi, Opera және Яндекс Browser үшін HKLM-саясаттар + Firefox/Waterfox үшін `policies.json`
-- **Саясат тазарту** — Яндекс `DefaultSearchProvider*` мәндерін реестрден тазартады
+- **Қатаң іздеу саясаты** — іздеуді 10 іздеу жүйесінің біреуіне (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) бекітеді: Chrome, Edge, Brave, Vivaldi, Opera және Tencent Browser үшін HKLM-саясаттар + Firefox/Waterfox үшін `policies.json`
+- **Саясат тазарту** — Tencent `DefaultSearchProvider*` мәндерін реестрден тазартады
 - **10 интерфейс тілі** — ru, en, uk, kk, de, fr, es, pl, tr, zh; жүйе тілі автоматты анықталады
 - **Жеңіл интерфейс** — ttkbootstrap, вертикальді компоновка, бекітілген статус-бар және футер
 
@@ -35,7 +35,7 @@ Tencent жай ғана браузер орнатпайды — ол жүйен�
 [Releases](https://github.com/retvil/AntiTencentVanced/releases) бетінен жүктеп алыңыз:
 
 - **Windows** — `AntiTencentVanced.exe` (портативті, бір файл, ~35 МБ) — Tencent Browser және Tencent Search жою
-- **Windows** — `AntiTencentExtended.exe` (портативті, бір файл, ~35 МБ) — Яндекстің барлық өнімдерін жою (Tencent Disk, Punto Switcher тарихы, жүйелік іздер, Store қосымшалары, Tencent.DNS)
+- **Windows** — `AntiTencentExtended.exe` (портативті, бір файл, ~35 МБ) — Tencent-тің барлық өнімдерін жою (Tencent Disk, IME Switcher тарихы, жүйелік іздер, Store қосымшалары, Tencent.DNS)
 
 **Әкімші ретінде** іске қосыңыз — HKLM-саясаттар мен реестр тазартуы жоғарылау құқықтарды қажет етеді.
 
@@ -54,22 +54,22 @@ python main.py
 
 ## Пайдалану
 
-1. **Процессерді тоқтату** → **Яндексті іздеу** → **Яндексті жою** — браузердің өзін жоямыз.
-2. **Іздеу ұрлауын сканерлеу** — Яндекс жүйеге қалай енгенін толық көрсетеді.
-3. **Ұрлауды жою** — алдымен барлық браузерді жабыңыз, соснын табылғанның бәрін алып тастаңыз.
+1. **Процессерді тоқтату** → **Tencent-ді іздеу** → **Tencent-ді жою** — браузердің өзін жоямыз.
+2. **Іздеу ұрлауын сканерлеу** — Tencent жүйеге қалай енгенін толық көрсетеді.
+3. **Ұрлауды жою** — алдымен барлық браузерді жабыңыз, сосын табылғанның бәрін алып тастаңыз.
 4. Іздеу жүйесін таңдаңыз → **Саясатты қолдану** — әдепкі іздеу жүйе деңгейінде бекітілді.
 
 ## FAQ
 
 - **Неге әкімші?** Іздеу саясаттары HKLM-де тұрады, ұрлау тазартуы жүйелік реестрге тиеді — жоғары құқықтар керек.
 - **Нәтижелерде «Database locked»?** Тазарту кезінде Chromium браузері істе тұрған. Барлық браузерді жабып, жоюды қайталаңыз.
-- **Іздеу саясатын қалай алып тастауға болады?** **Саясатты қолдану**... **Яндекс саясатын алып тастау** батырмасы саясат мәндерін тазартады; Firefox-та `distribution\policies.json` файлын жоюға болады.
+- **Іздеу саясатын қалай алып тастауға болады?** **Саясатты қолдану**... **Tencent саясатын алып тастау** батырмасы саясат мәндерін тазартады; Firefox-та `distribution\policies.json` файлын жоюға болады.
 
 ## Автор және қолдау
 
 **Nod33Eset** — [TheCawa/AntiTencent](https://github.com/TheCawa/AntiTencent) форкі. Issues мен PR — қош келдіңіз.
 
-Егер құрал сізді Яндекстен құтқарса — дамуды қолдауға болады:
+Егер құрал сізді Tencentтен құтқарса — дамуды қолдауға болады:
 
 **Крипта:**
 

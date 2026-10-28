@@ -24,7 +24,7 @@ import profiles
 import translations
 import tencent_detect
 
-APP_VERSION = "2.8.0"
+APP_VERSION = "1.0.0"
 APP_AUTHOR = "Nod33Eset"
 GITHUB_URL = "https://github.com/retvil/AntiTencentVanced"
 
@@ -89,7 +89,7 @@ def kill_tencent_processes():
             if extended:
                 hit = products_detect.is_product_process(name)
             else:
-                hit = bool(name) and name.lower() in ({"qqvideo.exe", "tencentcloud.exe"})
+                hit = bool(name) and name.lower() in ({"qqvideo.exe", "tencentcloud.exe", "tencentdisk.exe"})
                 if not hit:
                     exe = (proc.info.get('exe') or "").lower()
                     hit = "tencent video" in exe
@@ -522,3 +522,4 @@ def run(profile_name: str) -> None:
         update_status(t("warn_no_admin"), STATUS_COLORS["warn"])
 
     root.mainloop()
+
