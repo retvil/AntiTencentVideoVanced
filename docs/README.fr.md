@@ -26,7 +26,7 @@ Tencent n'installe pas qu'un navigateur — il s'enregistre silencieusement comm
 <details>
 <summary>Fenêtre principale</summary>
 
-![Fenêtre principale d'AntiTencentVanced](docs/screenshot.png)
+![Fenêtre principale d'AntiTencentVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Si l'outil t'a débarrassé de Tencent, tu peux soutenir le développement :
 
 ## Licence
 
-MIT — voir [LICENSE](LICENSE).
+MIT — voir [LICENSE](../LICENSE).
 
 
 

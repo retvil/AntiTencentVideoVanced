@@ -26,7 +26,7 @@ Tencent installiert nicht nur einen Browser — es trägt sich still über vierz
 <details>
 <summary>Hauptfenster</summary>
 
-![AntiTencentVanced Hauptfenster](docs/screenshot.png)
+![AntiTencentVanced Hauptfenster](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Wenn dich das Tool von Tencent befreit hat, kannst du die Entwicklung unterstüt
 
 ## Lizenz
 
-MIT — siehe [LICENSE](LICENSE).
+MIT — siehe [LICENSE](../LICENSE).
 
 
 

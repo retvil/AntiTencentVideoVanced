@@ -26,7 +26,7 @@ Tencent жай ғана браузер орнатпайды — ол жүйен�
 <details>
 <summary>Негізгі терезе</summary>
 
-![AntiTencentVanced негізгі терезесі](docs/screenshot.png)
+![AntiTencentVanced негізгі терезесі](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ python main.py
 
 ## Лицензия
 
-MIT — қ. [LICENSE](LICENSE).
+MIT — қ. [LICENSE](../LICENSE).
 
 
 

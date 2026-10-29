@@ -26,7 +26,7 @@ Tencent nie instaluje tylko przeglądarki — po cichu rejestruje się jako domy
 <details>
 <summary>Okno główne</summary>
 
-![Okno główne AntiTencentVanced](docs/screenshot.png)
+![Okno główne AntiTencentVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Jeśli narzędzie uwolniło Cię od Tencenta — możesz wesprzeć rozwój:
 
 ## Licencja
 
-MIT — zob. [LICENSE](LICENSE).
+MIT — zob. [LICENSE](../LICENSE).
 
 
 

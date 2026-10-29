@@ -26,7 +26,7 @@ Tencent yalnızca bir tarayıcı kurmaz — kırk farklı sistem mekanizmasıyla
 <details>
 <summary>Ana pencere</summary>
 
-![AntiTencentVanced ana penceresi](docs/screenshot.png)
+![AntiTencentVanced ana penceresi](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Araç sizi Tencent'ten kurtardıysa, geliştirmeyi destekleyebilirsiniz:
 
 ## Lisans
 
-MIT — bkz. [LICENSE](LICENSE).
+MIT — bkz. [LICENSE](../LICENSE).
 
 
 

@@ -26,7 +26,7 @@ Tencent встановлює не просто браузер — він тих�
 <details>
 <summary>Головне вікно</summary>
 
-![Головне вікно AntiTencentVanced](docs/screenshot.png)
+![Головне вікно AntiTencentVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ python main.py
 
 ## Ліцензія
 
-MIT — див. [LICENSE](LICENSE).
+MIT — див. [LICENSE](../LICENSE).
 
 
 
