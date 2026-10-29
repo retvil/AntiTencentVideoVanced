@@ -1,6 +1,6 @@
 """Extended-edition scans: whole Tencent products beyond the browser.
 
-Covers Store (Appx) applications — Tencent Music, Alice, Messenger, etc. —
+Covers Store (Appx) applications — Tencent Music, Messenger, Messenger, etc. —
 and product install directories under Program Files\\Tencent that are not
 the browser itself.
 """
@@ -22,7 +22,7 @@ def is_product_process(name: str | None) -> bool:
     """True if a process belongs to any Tencent product (Extended kill scope).
 
     Covers Tencent Disk (TencentDisk2.exe), Tencent Disk (tencentdisk.exe),
-    Store apps (Tencent Music / Messenger / Alice) and the browser itself.
+    Store apps (Tencent Music / Messenger / Messenger) and the browser itself.
     """
     lowered = (name or "").lower()
     return lowered in _BROWSER_PROCESS_NAMES or any(
