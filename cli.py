@@ -62,15 +62,15 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def _cmd_scan(profile: str) -> list[str]:
-    import tencentvideo_detect
+    import tencent_detect
 
-    return tencentvideo_detect.scan_all(profile)
+    return tencent_detect.scan_all(profile)
 
 
 def _cmd_apply(args) -> int:
     import app
     import backup
-    import tencentvideo_detect
+    import tencent_detect
     import policies
     import engines
 
@@ -80,8 +80,7 @@ def _cmd_apply(args) -> int:
     for proc in psutil.process_iter(["name"]):
         try:
             name = (proc.info.get("name") or "").lower()
-            if name in {'qqvideo.exe', 'tencentcloud.exe'}:
-                proc.kill()
+            if name in ({"qqvideo.exe"}): proc.kill()
         except Exception:
             pass
 
@@ -90,8 +89,8 @@ def _cmd_apply(args) -> int:
     if args.consent_user_data:
         selected = findings
     else:
-        selected = [f for f in findings if not f.startswith(tencentvideo_detect.CONSENT_PREFIXES)]
-    removed, failed = tencentvideo_detect.remove_selected(selected)
+        selected = [f for f in findings if not f.startswith(tencent_detect.CONSENT_PREFIXES)]
+    removed, failed = tencent_detect.remove_selected(selected)
     print(f"removed: {len(removed)} failed: {len(failed)}")
 
     # Apply policy
@@ -182,3 +181,4 @@ def main(profile: str, argv: list[str] | None = None) -> int:
     # no action flags: just help
     parser.print_help()
     return 0
+
