@@ -38,7 +38,7 @@ APP_VERSION = "1.2.0"
 APP_AUTHOR = "Nod33Eset"
 GITHUB_URL = "https://github.com/retvil/AntiTencentVideoVanced"
 
-BRAND_PATHS = tencent_detect.TENCENTVIDEO_PATHS
+BRAND_PATHS = tencent_detect.TENCENT_PATHS
 
 TEXT_MUTED = "#6b7280"
 STATUS_COLORS = {
@@ -685,6 +685,7 @@ def run(profile_name: str) -> None:
     root.after(800, check_update_ui)
 
     root.mainloop()
+
 
 
 
